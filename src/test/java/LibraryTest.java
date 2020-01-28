@@ -15,14 +15,14 @@ public class LibraryTest {
 
     @Before
     public void before(){
-        ArrayList<Book> collection = new ArrayList<>();
+        ArrayList<Book> libraryCollection = new ArrayList<>();
         book1 = new Book("The Lord of the Rings", "JRR Tolkien", "Fantasy");
         book2 = new Book("A Brief History of Time", "Stephen Hawking", "Non-Fiction");
         book3 = new Book("Animal Farm", "George Orwell", "Satire");
         book4 = new Book("The Trial", "Franz Kafka", "Philosophy");
-        collection.add(book1);
-        collection.add(book2);
-        library = new Library(collection, 3);
+        libraryCollection.add(book1);
+        libraryCollection.add(book2);
+        library = new Library(libraryCollection, 3);
     }
 
     @Test
