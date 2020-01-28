@@ -22,4 +22,8 @@ public class Library {
             return false;
         }
     }
+
+    public Book removeBook() {
+        return this.libraryCollection.remove(0);
+    }
 }
