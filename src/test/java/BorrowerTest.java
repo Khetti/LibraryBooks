@@ -2,9 +2,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
 public class BorrowerTest {
 
@@ -16,9 +16,10 @@ public class BorrowerTest {
     public void before(){
         borrower = new Borrower();
         book = new Book("Kitchen Confidential", "Anthony Bourdain", "Memoir");
+        HashMap<String, Integer> genres = new HashMap<>();
         ArrayList<Book> libraryCollection = new ArrayList<>();
         libraryCollection.add(book);
-        library = new Library(libraryCollection, 100);
+        library = new Library(libraryCollection, 100, genres);
     }
 
     @Test
@@ -32,6 +33,5 @@ public class BorrowerTest {
         assertEquals(0, library.stockCheck());
         assertEquals(1, borrower.borrowedCount());
     }
-
 
 }
