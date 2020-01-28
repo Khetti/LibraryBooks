@@ -5,8 +5,9 @@ public class Library {
     private ArrayList<Book> collection;
     private int capacity;
 
-    public Library(ArrayList<Book> collection){
+    public Library(ArrayList<Book> collection, int capacity){
         this.collection = collection;
+        this.capacity = capacity;
     }
 
 
