@@ -8,4 +8,7 @@ public class Borrower {
         this.borrowerCollection = new ArrayList<>();
     }
 
+    public int borrowedCount() {
+        return this.borrowerCollection.size();
+    }
 }
